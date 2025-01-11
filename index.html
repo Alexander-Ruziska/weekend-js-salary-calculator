@@ -12,7 +12,7 @@
 
     <section>
       <h3>Add Employee:</h3>
-      <form onsubmit="">
+      <form onsubmit="formHandler(event)">
         <input id="first"
           placeholder="First Name"
           type="text">
@@ -47,14 +47,16 @@
         </thead>
         <tbody id="table-data">
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button onclick="">Delete</button></td>
+            <td>Johnny</td>
+            <td>Knoxville</td>
+            <td>145673</td>
+            <td>Comedian</td>
+            <td>$304,000</td>
+            <td><button onclick="deleteHandler(event)">Delete</button></td>
           </tr>
-          <tr></tr>
+          <tr id="total">
+            <td></td>
+          </tr>
         </tbody>
       </table>
 
