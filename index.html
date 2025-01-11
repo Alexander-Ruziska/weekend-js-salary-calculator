@@ -21,13 +21,13 @@
           type="text">
           <input id="id"
           placeholder="ID:"
-          type="text">
+          type="number">
         <input id="title"
           placeholder="Title:"
           type="text">
           <input id="annual"
           placeholder="Annual Salary"
-          type="text">
+          type="number">
         <button>Submit</button>
       </form>
     </section>
@@ -46,20 +46,10 @@
           </tr>
         </thead>
         <tbody id="table-data">
-          <tr>
-            <td>Johnny</td>
-            <td>Knoxville</td>
-            <td>145673</td>
-            <td>Comedian</td>
-            <td>$304,000</td>
-            <td><button onclick="deleteHandler(event)">Delete</button></td>
-          </tr>
-          <tr id="total">
-            <td></td>
-          </tr>
+        </thead>
         </tbody>
       </table>
-
+      <p id="total-monthly-cost">Total Monthly Cost:</p>
     </section>
   </main>
 
