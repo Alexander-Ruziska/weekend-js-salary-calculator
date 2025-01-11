@@ -12,10 +12,7 @@ function formHandler(event){
     const titleInput = document.getElementById("title");
     const annualInput = document.getElementById("annual");
     const data = document.getElementById('table-data');
-    console.log(data);
-
     const annualSalary = Number(annualInput.value);
-    const monthlySalary = annualSalary / 12;
 
     data.innerHTML += `<tr>
         <td>${firstInput.value}</td>
@@ -36,10 +33,10 @@ function formHandler(event){
 }
 
 function updateTotal(){
-    const salaryCells = document.querySelectorAll('[data-annual-salary]');
+    const salaryCell = document.querySelectorAll('[data-annual-salary]');
     let totalMonthlyCost = 0;
 
-    salaryCells.forEach(cell => {
+    salaryCell.forEach(cell => {
         const annualSalary = cell.getAttribute('data-annual-salary');
         if (annualSalary) {
             const monthlySalary = Number(annualSalary) / 12;
