@@ -6,35 +6,35 @@ body {
     font-size: 1.25em;
   }
   
-    
-  /* FLEXBOX LAYOUT */
   html, body {
     min-height: 100vh;
     margin: auto;
   }
+
   body {
     display: flex;
     flex-direction: column;
   }
+
   header {
-    flex-basis: 4em; /* increased height */
+    flex-basis: 4em; 
     background-color: #9095f2;
     text-align: center;
-    width: 100%; /* added to make the header span the whole window */
+    width: 100%; 
   }
+
   main {
     flex: auto;
     max-width: 80%;
     margin: auto;
   }
+
   footer {
     height: 5em;
     background-color: #9095f2;
     text-align: center;
   }
-  
-  
-  /* HEADER/FOOTER */
+
   header, footer {
     height: 100%;
     width: 100%;
@@ -43,29 +43,29 @@ body {
     align-items: center;
   }
   
-  /* FORM ELEMENTS */
   input {
     padding: .5em;
     width: 148px;
     background: #ebebeb;
     border: 1px solid;
   }
+
   button {
     padding: .5em;
     width: 75px;
   }
   
-  
-  ///////////////////////////
   table {
     width: 100%;
     text-align: left;
   }
+
   table, th, td {
     border: 1px solid rgb(0, 0, 0);
     border-collapse: collapse;
     height: 1em;
   }
+
   th, td {
     padding: .3em;
     min-width: 7em;
@@ -76,9 +76,11 @@ body {
     background: #9095f2;
     color: #ebebeb;
   }
+
   tbody tr:nth-child(odd){ 
     background: #ebebeb;
   }
+  
   tbody tr:nth-child(even){
     background: #ebebeb;
   }
