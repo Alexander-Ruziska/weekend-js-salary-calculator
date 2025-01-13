@@ -17,7 +17,7 @@ body {
     flex-direction: column;
   }
   header {
-    flex-basis: em; /* increased height */
+    flex-basis: 4em; /* increased height */
     background-color: #9095f2;
     text-align: center;
     width: 100%; /* added to make the header span the whole window */
